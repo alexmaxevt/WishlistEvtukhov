@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterPinActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/enterPin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_pin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <View
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/num3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/num4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/numOne"
+            android:text="@string/app_numOne"/>
+        <Button
+            android:id="@+id/numTwo"
+            android:text="@string/app_numTwo"/>
+        <Button
+            android:id="@+id/numThree"
+            android:text="@string/app_numThree"/>
+        <Button
+            android:id="@+id/numFour"
+            android:text="@string/app_numFour"/>
+        <Button
+            android:id="@+id/numFive"
+            android:text="@string/app_numFive"/>
+        <Button
+            android:id="@+id/numSix"
+            android:text="@string/app_numSix"/>
+        <Button
+            android:id="@+id/numSeven"
+            android:text="@string/app_numSeven"/>
+        <Button
+            android:id="@+id/numEight"
+            android:text="@string/app_numEight"/>
+        <Button
+            android:id="@+id/numNine"
+            android:text="@string/app_numNine"/>
+        <Button
+            android:id="@+id/numZero"
+            android:text="@string/app_numZero"
+            android:layout_column="1"/>
+        <ImageButton
+            android:id="@+id/backspace"
+            android:src="@drawable/ic_multiply"
+            android:contentDescription="@string/app_pinImageButtonDescription"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pinError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Заметки</string>
+    <string name="app_pin">Введите pin:</string>
+    <string name="app_settingTitle">Настройки</string>
+    <string name="app_enterNewPine">Введите новый pin:</string>
+    <string name="app_saveSetting">Сохранить</string>
+    <string name="app_notesTitle">Заметки</string>
+    <string name="app_newNotesTitle">Новая заметка</string>
+    <string name="app_deadline">Есть крайний срок</string>
+    <string name="app_deleteDialogTitle">Удалить</string>
+    <string name="app_deleteDialogMessage">Вы действительно хотите удалить эту заметку?</string>
+    <string name="app_deleteDialogPositiveButton">Удалить</string>
+    <string name="app_deleteDialogNegativeButton">Отмена</string>
+    <string name="app_pinError">Ошибка: неправильный пароль</string>
+    <string name="app_numOne">1</string>
+    <string name="app_numTwo">2</string>
+    <string name="app_numThree">3</string>
+    <string name="app_numFour">4</string>
+    <string name="app_numFive">5</string>
+    <string name="app_numSix">6</string>
+    <string name="app_numSeven">7</string>
+    <string name="app_numEight">8</string>
+    <string name="app_numNine">9</string>
+    <string name="app_numZero">0</string>
+    <string name="app_pinImageButtonDescription">удалить предыдущее число</string>
+    <string name="app_calendarImageButtonDescription">календарь</string>
+</resources>

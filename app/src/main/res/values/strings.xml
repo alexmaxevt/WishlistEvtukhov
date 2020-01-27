@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Wishlist</string>
+    <string name="app_pin">Enter pin:</string>
+    <string name="app_settingTitle">Setting</string>
+    <string name="app_enterNewPine">Enter new pin:</string>
+    <string name="app_saveSetting">Save</string>
+    <string name="app_notesTitle">Notes</string>
+    <string name="app_newNotesTitle">New note</string>
+    <string name="app_deadline">Has deadline</string>
+    <string name="app_deleteDialogTitle">Delete</string>
+    <string name="app_deleteDialogMessage">Are you sure you want to delete this note?</string>
+    <string name="app_deleteDialogPositiveButton">Delete</string>
+    <string name="app_deleteDialogNegativeButton">Cancel</string>
+    <string name="app_pinError">Error: wrong password</string>
+    <string name="app_numOne">1</string>
+    <string name="app_numTwo">2</string>
+    <string name="app_numThree">3</string>
+    <string name="app_numFour">4</string>
+    <string name="app_numFive">5</string>
+    <string name="app_numSix">6</string>
+    <string name="app_numSeven">7</string>
+    <string name="app_numEight">8</string>
+    <string name="app_numNine">9</string>
+    <string name="app_numZero">0</string>
+    <string name="app_pinImageButtonDescription">backspace</string>
+    <string name="app_calendarImageButtonDescription">calendar</string>
+</resources>
