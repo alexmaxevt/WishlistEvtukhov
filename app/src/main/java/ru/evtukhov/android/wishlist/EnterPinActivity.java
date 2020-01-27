@@ -45,5 +45,14 @@ public class EnterPinActivity extends AppCompatActivity {
         nine = findViewById(R.id.numNine);
         zero = findViewById(R.id.numZero);
         backspace = findViewById(R.id.backspace);
+        circle1 = findViewById(R.id.num1);
+        circle2 = findViewById(R.id.num2);
+        circle3 = findViewById(R.id.num3);
+        circle4 = findViewById(R.id.num4);
+    }
+
+    // Устанавливаем цвет кружков при вводе цифры
+    private void setColorCircle () {
+
     }
 }
