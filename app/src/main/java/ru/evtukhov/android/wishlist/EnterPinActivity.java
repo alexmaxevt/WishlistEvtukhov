@@ -1,5 +1,6 @@
 package ru.evtukhov.android.wishlist;
 
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -24,6 +25,8 @@ public class EnterPinActivity extends AppCompatActivity {
     private View circle2;
     private View circle3;
     private View circle4;
+    private String btnName = "";
+    private int circleNum = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,5 +57,31 @@ public class EnterPinActivity extends AppCompatActivity {
     // Устанавливаем цвет кружков при вводе цифры
     private void setColorCircle () {
 
+    }
+
+    // Устанавливаем слушатели для кнопок
+    private void pinButton () {
+        one.setOnClickListener(getPinButtons(R.string.app_numOne));
+        two.setOnClickListener(getPinButtons(R.string.app_numTwo));
+        three.setOnClickListener(getPinButtons(R.string.app_numThree));
+        four.setOnClickListener(getPinButtons(R.string.app_numFour));
+        five.setOnClickListener(getPinButtons(R.string.app_numFive));
+        six.setOnClickListener(getPinButtons(R.string.app_numSix));
+        seven.setOnClickListener(getPinButtons(R.string.app_numSeven));
+        eight.setOnClickListener(getPinButtons(R.string.app_numEight));
+        nine.setOnClickListener(getPinButtons(R.string.app_numNine));
+        zero.setOnClickListener(getPinButtons(R.string.app_numZero));
+    }
+
+    // Общий слушатель для кнопок
+    private View.OnClickListener getPinButtons(@StringRes final int numberResource) {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnName += numberResource;
+                circleNum++;
+                setColorCircle();
+            };
+        };
     }
 }
