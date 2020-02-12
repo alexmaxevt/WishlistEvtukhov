@@ -11,12 +11,12 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         noteRepository = new FileNoteRepository(this);
-        keystore = new SimpleKeystore(getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE));
+        keystore = new FileKeystore(this);
     }
-    public NoteRepository getNoteRepository() {
+    public static NoteRepository getNoteRepository() {
         return noteRepository;
     }
-    public Keystore getKeystore() {
+    public static Keystore getKeystore() {
         return keystore;
     }
 }

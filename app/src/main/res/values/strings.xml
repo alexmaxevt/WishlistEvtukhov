@@ -24,4 +24,7 @@
     <string name="app_numZero">0</string>
     <string name="app_pinImageButtonDescription">backspace</string>
     <string name="app_calendarImageButtonDescription">calendar</string>
+    <string name="app_imageViewDescription">circle</string>
+    <string name="app_toastPassDontSave">password don\'t save</string>
+    <string name="app_toastPassSave">password save</string>
 </resources>

@@ -22,51 +22,55 @@
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:layout_gravity="center">
-        <View
+        <ImageView
             android:id="@+id/num1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:contentDescription="@string/app_imageViewDescription"/>
 
         <View
             android:id="@+id/space1"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
-        <View
+        <ImageView
             android:id="@+id/num2"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:contentDescription="@string/app_imageViewDescription"/>
 
         <View
             android:id="@+id/space2"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
-        <View
+        <ImageView
             android:id="@+id/num3"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:contentDescription="@string/app_imageViewDescription"/>
 
         <View
             android:id="@+id/space3"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
-        <View
+        <ImageView
             android:id="@+id/num4"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:contentDescription="@string/app_imageViewDescription"/>
     </LinearLayout>
 
     <GridLayout
