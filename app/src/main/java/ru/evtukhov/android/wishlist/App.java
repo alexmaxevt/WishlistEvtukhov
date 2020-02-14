@@ -13,9 +13,11 @@ public class App extends Application {
         noteRepository = new FileNoteRepository(this);
         keystore = new FileKeystore(this);
     }
+
     public static NoteRepository getNoteRepository() {
         return noteRepository;
     }
+
     public static Keystore getKeystore() {
         return keystore;
     }

@@ -7,38 +7,38 @@ public class Note {
     private boolean hasDeadline;
     private String deadlineDate;
 
-    public Note (String title, String body, boolean hasDeadline, String deadlineDate) {
+    Note(String title, String body, boolean hasDeadline, String deadlineDate) {
         this.title = title;
         this.body = body;
         this.hasDeadline = hasDeadline;
         this.deadlineDate = deadlineDate;
     }
 
-    public Note (String title, String body, boolean hasDeadline) {
+    public Note(String title, String body, boolean hasDeadline) {
         this.title = title;
         this.body = body;
         this.hasDeadline = hasDeadline;
     }
 
-    public Note (String title, String body, String deadlineDate) {
+    public Note(String title, String body, String deadlineDate) {
         this.title = title;
         this.body = body;
-        this.deadlineDate= deadlineDate;
+        this.deadlineDate = deadlineDate;
     }
 
-    public boolean isHasDeadline() {
+    boolean isHasDeadline() {
         return hasDeadline;
     }
 
-    public String getDeadlineDate() {
+    String getDeadlineDate() {
         return deadlineDate;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 
-    public String getBody() {
+    String getBody() {
         return body;
     }
 

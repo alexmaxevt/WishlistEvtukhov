@@ -44,7 +44,7 @@ public class EnterPinActivity extends AppCompatActivity {
     }
 
     // Инициализируем переменные
-    private void initView () {
+    private void initView() {
         one = findViewById(R.id.numOne);
         two = findViewById(R.id.numTwo);
         three = findViewById(R.id.numThree);
@@ -64,7 +64,7 @@ public class EnterPinActivity extends AppCompatActivity {
     }
 
     // Устанавливаем цвет кружков при вводе цифры
-    private void setColorCircle () {
+    private void setColorCircle() {
         switch (circleNum) {
             case 0:
                 circle1.setImageResource(R.drawable.shape);
@@ -100,7 +100,7 @@ public class EnterPinActivity extends AppCompatActivity {
     }
 
     // Устанавливаем слушатели для кнопок
-    private void pinButton () {
+    private void pinButton() {
         one.setOnClickListener(getPinButtons(R.string.app_numOne));
         two.setOnClickListener(getPinButtons(R.string.app_numTwo));
         three.setOnClickListener(getPinButtons(R.string.app_numThree));
@@ -114,8 +114,8 @@ public class EnterPinActivity extends AppCompatActivity {
         backspace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(circleNum > 0) {
-                    btnNum = btnNum.substring(0, btnNum.length()-1);
+                if (circleNum > 0) {
+                    btnNum = btnNum.substring(0, btnNum.length() - 1);
                     setColorCircle();
                 }
             }
@@ -131,34 +131,35 @@ public class EnterPinActivity extends AppCompatActivity {
                 circleNum++;
                 setColorCircle();
                 verifyNum();
-            };
+            }
+
+            ;
         };
     }
 
     // Проверка количества введенных символов
-    private void verifyNum () {
+    private void verifyNum() {
         if (circleNum == LENCIRCLE) {
             verifyPin();
         }
     }
 
     // Проверка введенного пин-кода
-    private void verifyPin () {
+    private void verifyPin() {
         String pin = new FileKeystore(this).readFilePass();
         assert pin != null;
         if (pin.equals(btnNum)) {
             circleNum = 0;
             Intent intent = new Intent(this, AllNotesActivity.class);
             startActivity(intent);
-        }
-        else {
+        } else {
             circleNum = 0;
             error.setText(R.string.app_pinError);
         }
     }
 
     // Проверка наличия файла с пин-кодом
-    private void verifityFile () {
+    private void verifityFile() {
         if (!fileKeystore.hasPin()) {
             Intent intent = new Intent(this, SettingActivity.class);
             startActivity(intent);

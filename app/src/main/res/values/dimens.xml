@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="size_shape">100dp</dimen>
+    <dimen name="size_marginSettings">50sp</dimen>
+    <dimen name="size_heightTextViewSettings">100dp</dimen>
+    <dimen name="size_textSizeTextViewSettings">35sp</dimen>
+    <dimen name="size_widthTextViewSettings">100dp</dimen>
+    <dimen name="size_buttonSettings">75dp</dimen>
 </resources>

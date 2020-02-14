@@ -26,9 +26,10 @@ public class NoteAdapter extends BaseAdapter {
     private NoteRepository noteRepository = App.getNoteRepository();
     private AlertDialog.Builder dialog;
 
-    public NoteAdapter(Context context) {
+    NoteAdapter(Context context, List<Note> noteList) {
         this.context = context;
-        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        this.noteList = noteList;
+        layoutInflater = LayoutInflater.from(context);
     }
 
     @Override

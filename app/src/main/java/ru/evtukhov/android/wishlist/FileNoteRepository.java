@@ -1,7 +1,6 @@
 package ru.evtukhov.android.wishlist;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 
@@ -61,7 +60,7 @@ public class FileNoteRepository implements NoteRepository {
     }
 
 
-    public FileNoteRepository(Context context) {
+    FileNoteRepository(Context context) {
         this.context = context;
     }
 

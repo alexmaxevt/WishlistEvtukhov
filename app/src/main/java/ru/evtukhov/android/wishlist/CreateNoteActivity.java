@@ -36,7 +36,7 @@ public class CreateNoteActivity extends AppCompatActivity {
 
     // Действия кнопок "Сохранить" и "Назад" в toolbar
     @Override
-    public boolean onOptionsItemSelected (MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
             this.finish();
             return true;
@@ -49,8 +49,8 @@ public class CreateNoteActivity extends AppCompatActivity {
     }
 
     // Инициализация компонентов view
-    private void initView () {
-        dateDeadline= findViewById(R.id.dateDeadline);
+    private void initView() {
+        dateDeadline = findViewById(R.id.dateDeadline);
         dateAndTime = Calendar.getInstance();
     }
 
@@ -63,13 +63,13 @@ public class CreateNoteActivity extends AppCompatActivity {
     }
 
     // Диалоговое окно для выбора даты
-    public void setDate (View view) {
+    public void setDate(View view) {
         new DatePickerDialog(
-            this,
-            dateSet,
-            dateAndTime.get(Calendar.YEAR),
-            dateAndTime.get(Calendar.MONTH),
-            dateAndTime.get(Calendar.DAY_OF_MONTH)
+                this,
+                dateSet,
+                dateAndTime.get(Calendar.YEAR),
+                dateAndTime.get(Calendar.MONTH),
+                dateAndTime.get(Calendar.DAY_OF_MONTH)
         ).show();
     }
 
@@ -83,10 +83,10 @@ public class CreateNoteActivity extends AppCompatActivity {
             dateAndTime.set(Calendar.DAY_OF_MONTH, dayOfMonth);
             String formattedMonth = "" + month;
             String formattedDayOfMonth = "" + dayOfMonth;
-            if(month < 10){
+            if (month < 10) {
                 formattedMonth = "0" + month;
             }
-            if(dayOfMonth < 10){
+            if (dayOfMonth < 10) {
                 formattedDayOfMonth = "0" + dayOfMonth;
             }
             String formattedDate = year + "-" + formattedMonth + "-" + formattedDayOfMonth;

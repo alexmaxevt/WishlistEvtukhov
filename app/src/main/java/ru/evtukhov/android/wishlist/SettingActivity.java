@@ -2,7 +2,6 @@ package ru.evtukhov.android.wishlist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
@@ -18,7 +17,6 @@ public class SettingActivity extends AppCompatActivity {
     private EditText newPass;
     private ImageButton hideOrView;
     private boolean isVisible;
-    private Button save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,19 +36,19 @@ public class SettingActivity extends AppCompatActivity {
     // Обработка нажатия кнопки возврата на предыдущий экран
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.action_settings) {
+        if (item.getItemId() == R.id.action_settings) {
             finish();
         }
         return true;
     }
 
     // Инициализвция элементов View
-    private void initView () {
+    private void initView() {
         newPass = findViewById(R.id.newPass);
         hideOrView = findViewById(R.id.hideOrView);
         hideOrView.setOnClickListener(showOrHide);
         isVisible = false;
-        save = findViewById(R.id.saveSetting);
+        Button save = findViewById(R.id.saveSetting);
         save.setOnClickListener(saveButton);
     }
 
@@ -58,17 +56,21 @@ public class SettingActivity extends AppCompatActivity {
     View.OnClickListener showOrHide = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (isVisible) {
-                hideOrView.setImageResource(R.drawable.ic_hide);
-                newPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                newPass.setSelection(newPass.length());
-                isVisible = false;
+            if (newPass.getText().length() == 0) {
+                hideOrView.setClickable(false);
             }
             else {
-                hideOrView.setImageResource(R.drawable.ic_view);
-                newPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                newPass.setSelection(newPass.length());
-                isVisible = true;
+                if (isVisible) {
+                    hideOrView.setImageResource(R.drawable.ic_hide);
+                    newPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    newPass.setSelection(newPass.length());
+                    isVisible = false;
+                } else {
+                    hideOrView.setImageResource(R.drawable.ic_view);
+                    newPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    newPass.setSelection(newPass.length());
+                    isVisible = true;
+                }
             }
         }
     };

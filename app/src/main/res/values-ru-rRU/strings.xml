@@ -28,4 +28,8 @@
     <string name="app_imageViewDescription">круг</string>
     <string name="app_toastPassDontSave">пароль не сохранен</string>
     <string name="app_toastPassSave">пароль сохранен</string>
+    <string name="app_toastNoteSave">данные сохранены</string>
+    <string name="app_toastNoteNotSave">данные не сохранены</string>
+    <string name="app_showDescription">показать</string>
+    <string name="app_settingsHill">пароль</string>
 </resources>

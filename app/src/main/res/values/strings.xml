@@ -27,4 +27,8 @@
     <string name="app_imageViewDescription">circle</string>
     <string name="app_toastPassDontSave">password don\'t save</string>
     <string name="app_toastPassSave">password save</string>
+    <string name="app_toastNoteSave">the data stored</string>
+    <string name="app_toastNoteNotSave">the data don\'t stored</string>
+    <string name="app_showDescription">show</string>
+    <string name="app_settingsHill">password</string>
 </resources>

@@ -51,13 +51,11 @@ public class FileKeystore implements Keystore {
     }
 
     @Nullable
-    public String readFilePass() {
-        String password = "";
+    String readFilePass() {
         try (FileInputStream fileInputStream = context.openFileInput(FILE_KEYSTORE);
              InputStreamReader inputStream = new InputStreamReader(fileInputStream);
              BufferedReader bufferedReader = new BufferedReader(inputStream)) {
-            password = bufferedReader.readLine();
-            return password;
+            return bufferedReader.readLine();
         } catch (IOException ex) {
             ex.printStackTrace();
             return null;

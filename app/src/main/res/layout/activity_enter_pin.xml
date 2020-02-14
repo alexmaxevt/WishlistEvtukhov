@@ -14,6 +14,8 @@
             android:id="@+id/enterPin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="78sp"
             android:text="@string/app_pin"/>
     </LinearLayout>
 
@@ -21,7 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_margin="50dp">
         <ImageView
             android:id="@+id/num1"
             android:layout_width="wrap_content"
@@ -78,7 +81,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:columnCount="3"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
         <Button
             android:id="@+id/numOne"
             android:text="@string/app_numOne"/>
